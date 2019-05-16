@@ -1,0 +1,33 @@
+#include "winmenu.h"
+
+COMMANDMENU MENU
+{
+	POPUP "&Settings"
+	{
+		POPUP "&Protocol"
+		{
+			MENUITEM "&TCP", IDM_TCP
+			MENUITEM "&UDP", IDM_UDP
+		}
+		POPUP "&Client/Server"
+		{
+			MENUITEM "&Client", IDM_CLIENT
+			MENUITEM "&Server", IDM_SERVER
+		}
+		POPUP "&Packet Size"
+		{
+			MENUITEM "&512 Bytes", IDM_512
+			MENUITEM "&1024 Bytes", IDM_1024
+			MENUITEM "&4096 Bytes", IDM_4096
+			MENUITEM "&20 KBytes", IDM_20K
+			MENUITEM "&60 Kbytes", IDM_60K
+		}
+		MENUITEM "&Port", IDM_PORT
+		MENUITEM "&IP", IDM_IP		
+		MENUITEM "&SendCount", IDM_SEND_COUNT
+	}
+	MENUITEM "&Select File", IDM_FILE
+	MENUITEM "&Connect", IDM_START
+	MENUITEM "&Quit", IDM_QUIT
+	
+}
